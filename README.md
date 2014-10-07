@@ -18,7 +18,7 @@ Converts a CSV file into a PostgreSQL table.
 	--sniff=N       limit field type detection to N rows (default: 1000)
 	--utf8          force client encoding to UTF8
 	--delimiter='d' select delimiter (default: ','),
-			tab is --delimiter='     ', ('/t' will not work).
+			tab is --delimiter=$'\t'
 	--datatype=name[,name]:type 
 			sets the data type for field NAME to TYPE
 
